@@ -28,11 +28,11 @@ let windowWidth = window.innerWidth,
     maxScore = localStorage.getItem(storeScore);
 
     if (rod === "null" || maxScore === "null") {
-        alert("This is the first time you are playing this game. LET'S START");
+        alert("This is the first time you are playing this game. PRESS ENTER TO START (A - left move and D - right move )");
         maxScore = 0;
         rod = "Rod1"
     } else {
-        alert(rod + " has maximum score of " + maxScore * 100);
+        alert(rod + " has maximum score of " + maxScore * 100 + "PRESS ENTER TO START (A - left move and D - right move )");
     }
 
     resetBoard(rod);
